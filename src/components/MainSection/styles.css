@@ -1,0 +1,159 @@
+/* Main Wrapper */
+:root {
+  --main-blue: rgb(0, 60, 255);
+  --red: rgb(255, 30, 0);
+}
+.top-section {
+  min-height: 20vh;
+  display: flex;
+  padding: 0 1rem;
+  column-gap: 0.5rem;
+}
+
+/* Left Sub Section */
+.left-sub-section {
+  position: relative;
+  flex: 0.5;
+  display: grid;
+  align-content: space-between;
+  row-gap: 30px;
+  font-size: calc(0.75rem + 1vw);
+}
+
+.quote {
+  display: grid;
+  font-size: calc(0.75rem + 0.7vw);
+  row-gap: 0.5rem;
+  font-style: italic;
+}
+
+.author {
+  font-weight: 700;
+  font-style: normal;
+  font-size: calc(0.75rem + 1vw);
+}
+
+.moon-phase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.phase-img {
+  filter: sepia(100%);
+  min-height: calc(50px + 14vw);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.phase {
+  text-align: center;
+}
+
+.baby-names > * {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.baby-names > * > span {
+  font-weight: 400;
+}
+
+/* Main Sub Section */
+.main-sub-section {
+  position: relative;
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  row-gap: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 2px solid var(--main-blue);
+  border-radius: 20px;
+  background-color: rgba(189, 189, 43, 0.459);
+  padding: 0 0.5rem;
+}
+
+.year {
+  color: white;
+  background-color: var(--main-blue);
+  padding: 5px 16px;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.month {
+  padding-top: 1rem;
+  font-size: 23px;
+  font-weight: 700;
+  font-size: calc(1.4rem + 1.4vw);
+}
+
+.date-summary {
+  text-align: center;
+  font-size: calc(0.5rem + 1.4vw);
+}
+
+.day-number {
+  color: var(--red);
+  font-size: calc(3rem + 2vw);
+  font-weight: 700;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.day-name {
+  /*  */
+  font-size: calc(1.4rem + 1.4vw);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-blue);
+}
+
+.important-day {
+  text-align: center;
+}
+
+/* Right Sub Section */
+.right-sub-section {
+  flex: 0.5;
+  min-width: 107px;
+  display: grid;
+  place-items: center;
+}
+
+.day-time {
+  border: 1px solid var(--red);
+}
+
+/* Quotes Spinner */
+.left-sub-section > :nth-child(1)::after {
+  border-color: #bbcf08 transparent #a03623 transparent;
+}
+
+/* Moon Phase Spinner */
+.left-sub-section > :nth-child(2)::after {
+  border-color: #469b2d transparent #234da0 transparent;
+}
+
+/* Names Spinner */
+.left-sub-section > :nth-child(3)::after{
+  border-color: #bbcf08 transparent #a03623 transparent;
+  position: absolute;
+  bottom: 1rem;
+  left: 10%;
+}
+
+@media (min-width: 900px) {
+  .top-section {
+    padding: 0 2rem;
+    column-gap: 2rem;
+  }
+}

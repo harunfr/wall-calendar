@@ -1,0 +1,97 @@
+$dayCellHeight: calc(0.1px + 4vw);
+
+
+.monthlyCalendar {
+  // max-width: calc((0.1px + 4vw) * 7);
+}
+.monthlyCalendar div {
+  text-align: center;
+  font-size: calc(0.6rem + 1vw);
+}
+.monthlyCalendarYear {
+}
+.monthlyCalendarMonth {
+  font-size: 44px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.btnChangeMonth {
+  font-size: 16px;
+}
+.monthName {
+  font-size: calc(12px + 1vw);
+}
+.dayCell {
+  position: relative;
+  width: $dayCellHeight;
+  height: $dayCellHeight;
+  line-height: $dayCellHeight;
+  float: left;
+  font-size: 12px;
+  color: rebeccapurple;
+}
+.dayCell.today {
+  color: red;
+}
+
+.dayCell.today::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 5%;
+  background-color: rgba(189, 189, 43, 0.459);
+  border-radius: 50%;
+  font-weight: 700;
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: white;
+
+}
+.startWithMon .dayCell:nth-child(7n),
+.startWithSun .dayCell:nth-child(7n + 1) {
+  color: #ffffff;
+}
+.startWithMon .dayCell:nth-child(7n):after,
+.startWithSun .dayCell:nth-child(7n + 1):after {
+  content: '\00a0 ';
+  border-radius: $dayCellHeight/1.8;
+  width: calc((0.1px + 4vw) * 0.9);
+  height: calc((0.1px + 4vw) * 0.9);
+  display: block;
+  position: relative;
+  top: calc((0.1px + 4vw) * -0.95);
+  left: calc((0.1px + 4vw) * 0.95);
+  z-index: -1;
+}
+.btnChangeMonth {
+  cursor: pointer;
+}
+.btnChangeMonth:hover {
+  color: #666666;
+}
+
+@media screen and (max-width: 450px) {
+  // container
+  .monthlyCalendar {
+    max-width: calc((12px + 3vw) * 7);
+  }
+  // days
+  .dayCell {
+    width: calc((5px + 3vw) * 0.9);
+    height: calc((5px + 3vw) * 0.9);
+  }
+}
+
+@media screen and (min-width: 605px) {
+  // container
+  .monthlyCalendar {
+    max-width: calc((12px + 3vw) * 7);
+  }
+  // days
+  .dayCell {
+    width: calc((12px + 3vw) * 0.9);
+    height: calc((12px + 3vw) * 0.9);
+  }
+}

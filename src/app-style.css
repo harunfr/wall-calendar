@@ -1,0 +1,30 @@
+.main-wrapper {
+  display: grid;
+  margin-top: 2rem;
+}
+
+.toggler-btn{
+  z-index: 9999;
+  position: sticky;
+  top: 0;
+  background-color: rgba(240, 248, 255, 0.6);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  border-radius: 3px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.toggler-btn:hover{
+  opacity: 0.8;
+}
+
+@media (min-width: 900px) {
+  .main-wrapper {
+    row-gap: 2rem;
+  }
+}
