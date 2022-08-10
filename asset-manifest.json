@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/wall-calendar/static/css/main.32a91cfa.css",
+    "main.js": "/wall-calendar/static/js/main.df971e29.js",
+    "static/media/angkor-wat.webp": "/wall-calendar/static/media/angkor-wat.ba35638268477b5aa243.webp",
+    "static/media/full.jpg": "/wall-calendar/static/media/full.84d45fd6efd0c530c5f9.jpg",
+    "static/media/easter-island.webp": "/wall-calendar/static/media/easter-island.953ca2f87fde7d5821f8.webp",
+    "static/media/waning-gibbous.jpg": "/wall-calendar/static/media/waning-gibbous.a96d20ad96257be338e5.jpg",
+    "static/media/waxing-gibbous.jpg": "/wall-calendar/static/media/waxing-gibbous.a50c4b3ab3a882e42d78.jpg",
+    "static/media/stonehenge.webp": "/wall-calendar/static/media/stonehenge.e5a672a3188b6d6d980b.webp",
+    "static/media/last-quarter.jpg": "/wall-calendar/static/media/last-quarter.9dba854e6963289c1480.jpg",
+    "static/media/first-quarter.jpg": "/wall-calendar/static/media/first-quarter.92c66f288482e4cfcd64.jpg",
+    "static/media/waxing-crescent.jpg": "/wall-calendar/static/media/waxing-crescent.e3b298be39b573b750c5.jpg",
+    "static/media/waning-crescent.jpg": "/wall-calendar/static/media/waning-crescent.354c3583cff053f31e7d.jpg",
+    "static/media/parthenon.webp": "/wall-calendar/static/media/parthenon.e5b3305f896bcb29b11c.webp",
+    "static/media/new.jpg": "/wall-calendar/static/media/new.45f7dffb6185770307f1.jpg",
+    "static/media/pyramid.webp": "/wall-calendar/static/media/pyramid.0f4d1a6e967f7db88ca8.webp",
+    "index.html": "/wall-calendar/index.html",
+    "main.32a91cfa.css.map": "/wall-calendar/static/css/main.32a91cfa.css.map",
+    "main.df971e29.js.map": "/wall-calendar/static/js/main.df971e29.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32a91cfa.css",
+    "static/js/main.df971e29.js"
+  ]
+}
